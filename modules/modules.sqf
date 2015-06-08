@@ -9,3 +9,5 @@
 #include "start_on_safe\root.sqf"
 #include "start_on_radio_channel\root.sqf"
 #include "auto_track_assets\root.sqf"
+#include "voiper_Spectate\root.sqf"
+#include "radio_channel_names\root.sqf"

@@ -1,0 +1,1337 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"mbg_celle2",
+		"rhsusf_c_m113",
+		"rhsusf_c_troops",
+		"rhs_c_troops",
+		"rhs_c_btr",
+		"A3_Modules_F",
+		"rhs_c_trucks"
+	};
+	addOnsAuto[]=
+	{
+		"rhsusf_c_troops",
+		"rhsusf_c_m113",
+		"rhs_c_troops",
+		"A3_Modules_F",
+		"rhs_c_btr",
+		"rhs_c_trucks",
+		"mbg_celle2"
+	};
+	randomSeed=5662727;
+	class Intel
+	{
+		briefingName="CO28 Kanari V9";
+		overviewText="Russian assault on american held town";
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		month=6;
+		day=24;
+		hour=19;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=31;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9079.8701,0.00143909,8681.25};
+					azimut=92.719803;
+					offsetY=3.2013299;
+					id=0;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9071.25,0.00144005,8763.75};
+					azimut=192.13;
+					offsetY=0.217242;
+					id=1;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9053.4014,11.66,8751.9375};
+					azimut=200;
+					offsetY=0.048137698;
+					id=2;
+					side="WEST";
+					vehicle="rhsusf_m113_usarmy";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.51625669;
+					fuel=0;
+					init="[this, ""M113"", ""US Army""] call TRACKASSET;";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9074.6699,0.00143909,8766.8701};
+					azimut=114.169;
+					offsetY=0.217242;
+					id=3;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9104.4199,11.66,8819.7002};
+					azimut=242.51601;
+					offsetY=0.063529;
+					id=4;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9109.4404,11.66,8820.8096};
+					azimut=69.516602;
+					offsetY=0.063529;
+					id=5;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9074.6396,0.00143909,8834.2305};
+					azimut=319.74399;
+					offsetY=0.00143909;
+					id=6;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8960.8701,0.00143909,8921.9199};
+					azimut=108.999;
+					offsetY=4.1353598;
+					id=7;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8973.71,0.00149632,8922.3799};
+					azimut=280.13599;
+					offsetY=4.1174402;
+					id=8;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8953.3154,11.655114,8970.1377};
+					azimut=300;
+					offsetY=0.0484819;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="rhsusf_m113_usarmy";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.43525758;
+					fuel=0;
+					init="[this, ""M113"", ""US Army""] call TRACKASSET;";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9015.8604,0.001441,8907.6699};
+					azimut=169.086;
+					offsetY=0.001441;
+					id=10;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9012.5098,0.00144005,8886.1602};
+					offsetY=13.0014;
+					id=11;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_marksman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9024.2695,0.00143909,8927.4697};
+					azimut=52.795101;
+					offsetY=3.7039001;
+					id=12;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_machinegunner";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9024.75,0.00143909,8927.25};
+					azimut=56.3521;
+					offsetY=0.303155;
+					id=13;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_marksman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8926.1396,0.0014047601,8929.2197};
+					azimut=162.726;
+					offsetY=0.114347;
+					id=14;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8957.3301,0.00143909,8960.2002};
+					offsetY=3.4049001;
+					id=15;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9014.6104,0.00143909,8933.7002};
+					azimut=226.778;
+					offsetY=3.7039001;
+					id=16;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_machinegunner";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9049.0801,0.00143909,8949.7402};
+					azimut=249.907;
+					offsetY=4.2193098;
+					id=17;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9074.5303,0.00143909,8943.25};
+					azimut=73.510902;
+					offsetY=3.61884;
+					id=18;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_autorifleman";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8983.8604,0.00144005,8978.0303};
+					offsetY=3.40342;
+					id=19;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_machinegunner";
+					leader=1;
+					skill=0.5;
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9121.6484,11.65963,8807.5557};
+					azimut=73.010597;
+					offsetY=0.049296401;
+					id=20;
+					side="WEST";
+					vehicle="rhsusf_m113_usarmy";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46861011;
+					fuel=0;
+					text="e";
+					init="[this, ""M113"", ""US Army""] call TRACKASSET;";
+				};
+			};
+		};
+		class Item21
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={6788.6265,19.309999,8038.4453};
+					special="NONE";
+					id=21;
+					side="EAST";
+					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf""; group this setGroupId [""Meteor – 231""];[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | BTR Commander/Squad Leader";
+				};
+				class Item1
+				{
+					position[]={6794.5098,19.309999,8037.0322};
+					special="NONE";
+					id=22;
+					side="EAST";
+					vehicle="rhs_msv_combatcrew";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""ASL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | Asst Squad Leader/BTR Gunner";
+				};
+				class Item2
+				{
+					position[]={6794.4077,19.309999,8037.6914};
+					special="NONE";
+					id=23;
+					side="EAST";
+					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""Driver"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | BTR Driver/Mechanic";
+				};
+				class Item3
+				{
+					position[]={6788.4482,19.309999,8035.6934};
+					special="NONE";
+					id=24;
+					side="EAST";
+					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""RPK"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | RPK Gunner";
+				};
+				class Item4
+				{
+					position[]={6788.5776,19.309999,8037.7231};
+					special="NONE";
+					id=25;
+					side="EAST";
+					vehicle="rhs_msv_at";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""Gren"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | Grenadier RPG ";
+				};
+				class Item5
+				{
+					position[]={6788.5244,19.309999,8037.124};
+					special="NONE";
+					id=26;
+					side="EAST";
+					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""ARPG"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | Assistant RPG";
+				};
+				class Item6
+				{
+					position[]={6788.481,19.309999,8036.3335};
+					special="NONE";
+					id=27;
+					side="EAST";
+					vehicle="rhs_msv_efreitor";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""SR"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | Senior Rifleman/Efreitor";
+				};
+				class Item7
+				{
+					position[]={6788.4487,19.309999,8034.9746};
+					special="NONE";
+					id=28;
+					side="EAST";
+					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""RIF"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 1] call FNC_SetRadio;";
+					description="Meteor – 231 | 1st Squad | Rifleman";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={6806.3799,19.309999,8037.9014};
+					special="NONE";
+					id=29;
+					side="EAST";
+					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf""; group this setGroupId [""Meteor – 232""];[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | BTR Commander/Squad Leader";
+				};
+				class Item1
+				{
+					position[]={6814.146,19.309999,8037.4731};
+					special="NONE";
+					id=30;
+					side="EAST";
+					vehicle="rhs_msv_combatcrew";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""ASL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | Asst Squad Leader/BTR Gunner";
+				};
+				class Item2
+				{
+					position[]={6814.0215,19.309999,8038.2671};
+					special="NONE";
+					id=31;
+					side="EAST";
+					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""Driver"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | BTR Driver/Mechanic";
+				};
+				class Item3
+				{
+					position[]={6806.377,19.309999,8035.4507};
+					special="NONE";
+					id=32;
+					side="EAST";
+					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""RPK"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | RPK Gunner";
+				};
+				class Item4
+				{
+					position[]={6806.4336,19.309999,8037.2388};
+					special="NONE";
+					id=33;
+					side="EAST";
+					vehicle="rhs_msv_at";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""Gren"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | Grenadier RPG ";
+				};
+				class Item5
+				{
+					position[]={6806.3706,19.309999,8036.7217};
+					special="NONE";
+					id=34;
+					side="EAST";
+					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""ARPG"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | Assistant RPG";
+				};
+				class Item6
+				{
+					position[]={6806.3589,19.309999,8036.0796};
+					special="NONE";
+					id=35;
+					side="EAST";
+					vehicle="rhs_msv_efreitor";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""SR"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | Senior Rifleman/Efreitor";
+				};
+				class Item7
+				{
+					position[]={6806.4312,19.309999,8034.7729};
+					special="NONE";
+					id=36;
+					side="EAST";
+					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""RIF"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 2] call FNC_SetRadio;";
+					description="Meteor – 232 | 2nd Squad | Rifleman";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={6832.105,19.313421,8044.0293};
+					special="NONE";
+					id=37;
+					side="EAST";
+					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf""; group this setGroupId [""Meteor – 233""];[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | BTR Commander/Squad Leader";
+				};
+				class Item1
+				{
+					position[]={6839.4111,19.31951,8042.2534};
+					special="NONE";
+					id=38;
+					side="EAST";
+					vehicle="rhs_msv_combatcrew";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""ASL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | Asst Squad Leader/BTR Gunner";
+				};
+				class Item2
+				{
+					position[]={6839.2959,19.319412,8042.8672};
+					special="NONE";
+					id=39;
+					side="EAST";
+					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""Driver"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | BTR Driver/Mechanic";
+				};
+				class Item3
+				{
+					position[]={6832.1094,19.313425,8041.6934};
+					special="NONE";
+					id=40;
+					side="EAST";
+					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""RPK"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | RPK Gunner";
+				};
+				class Item4
+				{
+					position[]={6832.1201,19.313433,8043.3564};
+					special="NONE";
+					id=41;
+					side="EAST";
+					vehicle="rhs_msv_at";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""Gren"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | Grenadier RPG ";
+				};
+				class Item5
+				{
+					position[]={6832.1069,19.313423,8042.8135};
+					special="NONE";
+					id=42;
+					side="EAST";
+					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""ARPG"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | Assistant RPG";
+				};
+				class Item6
+				{
+					position[]={6832.1392,19.31345,8042.2524};
+					special="NONE";
+					id=43;
+					side="EAST";
+					vehicle="rhs_msv_efreitor";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""SR"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | Senior Rifleman/Efreitor";
+				};
+				class Item7
+				{
+					position[]={6832.0659,19.313389,8041.084};
+					special="NONE";
+					id=44;
+					side="EAST";
+					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="id = [""RIF"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 3] call FNC_SetRadio;";
+					description="Meteor – 233 | 3rd Squad | Rifleman";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6829.8008,19.319263,8030.6831};
+					special="NONE";
+					id=45;
+					side="EAST";
+					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=1;
+					init="id = [""PL"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf""; group this setGroupId [""Meteor – 230""];[this, ""ACRE_PRC343"", 4] call FNC_SetRadio;";
+					description="Meteor – 230 | 1st Platoon | Platoon Commander";
+				};
+				class Item1
+				{
+					position[]={6818.3389,19.311949,8032.6401};
+					special="NONE";
+					id=46;
+					side="EAST";
+					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="id = [""PSG"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 4] call FNC_SetRadio;";
+					description="Meteor – 230 | 1st Platoon HQ | Platoon Sergeant";
+				};
+				class Item2
+				{
+					position[]={6835.2988,19.322866,8024.1416};
+					special="NONE";
+					id=47;
+					side="EAST";
+					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""MD"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 4] call FNC_SetRadio;";
+					description="Meteor – 230 | 1st Platoon | Medic";
+				};
+				class Item3
+				{
+					position[]={6824.5088,19.317091,8023.4839};
+					special="NONE";
+					id=48;
+					side="EAST";
+					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="id = [""SVD"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";[this, ""ACRE_PRC343"", 4] call FNC_SetRadio;";
+					description="Meteor – 230 | 1st Platoon | Marksman";
+				};
+			};
+		};
+		class Item25
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9045.9688,11.65863,8905.6426};
+					special="NONE";
+					id=49;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="TEST";
+					description="Meteor – 231 | 1st Platoon | Platoon Commander";
+				};
+			};
+		};
+		class Item26
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9058.0527,11.66,8866.752};
+					id=50;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="[""whaadsdsatever"",getPos this,east,[""inf""],3,1] call vk_fnc_addMarker;";
+				};
+			};
+		};
+		class Item27
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6812.4751,19.309999,8029.8945};
+					id=51;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="[""NAasssdsME"",getPos this,west,[""inf"",""motor""],3,1,[west,east],""1st Platoon""] call vk_fnc_addMarker;";
+				};
+			};
+		};
+		class Item28
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6791.769,19.309999,8016.4668};
+					id=52;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="[""NAassssssdsME"",getPos this,west,[""medic"",""wheeled""],1,1] call vk_fnc_addMarker;";
+				};
+			};
+		};
+		class Item29
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9334.624,11.66,8912.4248};
+					azimut=169.086;
+					offsetY=0.001441;
+					id=53;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_rifleman";
+					leader=1;
+					skill=0.5;
+				};
+				class Item1
+				{
+					position[]={9323.332,11.66,8909.3174};
+					azimut=162.726;
+					offsetY=0.114347;
+					id=54;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={9327.2822,11.66,8918.9131};
+					offsetY=3.40342;
+					id=55;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_machinegunner";
+					skill=0.5;
+				};
+				class Item3
+				{
+					position[]={9317.9814,11.66,8915.6406};
+					offsetY=3.4049001;
+					id=56;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					skill=0.5;
+				};
+			};
+			class Waypoints
+			{
+				items=13;
+				class Item0
+				{
+					position[]={9567.2949,11.225898,8696.2178};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={9857.2021,12.282023,8502.1836};
+					type="SENTRY";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={9739.6416,11.108595,8779.5371};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={9701.9746,10.606244,9013.5186};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={9487.3965,10.163836,9462.0781};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={9197.4883,11.128362,9540.833};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={8813.9863,15.215388,9503.168};
+					type="SENTRY";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item7
+				{
+					position[]={8907.5791,12.585328,9391.3135};
+					type="SENTRY";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item8
+				{
+					position[]={9086.7744,10.793138,9304.5684};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item9
+				{
+					position[]={9389.2393,10.215633,9330.8203};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item10
+				{
+					position[]={9496.5273,10.460069,9113.959};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item11
+				{
+					position[]={9204.0859,11.66,8969.0693};
+					type="SENTRY";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item12
+				{
+					position[]={9343.4092,11.66,8909.8857};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item30
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8376.4033,20.667549,9678.8193};
+					azimut=310;
+					offsetY=0.063529;
+					id=57;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_riflemanat";
+					leader=1;
+					skill=0.5;
+					syncId=0;
+					synchronizations[]={0};
+				};
+				class Item1
+				{
+					position[]={8372.4443,20.685144,9675.5654};
+					azimut=310;
+					offsetY=0.063529;
+					id=58;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					skill=0.5;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8371.1758,20.67594,9677.7744};
+					type="GUARD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=4;
+		class Item0
+		{
+			position[]={6792.0034,19.309999,8035.3223};
+			special="NONE";
+			id=59;
+			side="EMPTY";
+			vehicle="rhs_btr80_msv";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="id = [""BTR"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";vehnbr = [this,[[""Number"", [9,10,11], ""AviaBlue"",231]]] spawn rhs_fnc_decalsInit;";
+		};
+		class Item1
+		{
+			position[]={6811.5557,19.309999,8036.5928};
+			special="NONE";
+			id=60;
+			side="EMPTY";
+			vehicle="rhs_btr80_msv";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="id = [""BTR"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";vehnbr = [this,[[""Number"", [9,10,11], ""AviaBlue"",232]]] spawn rhs_fnc_decalsInit;";
+		};
+		class Item2
+		{
+			position[]={6836.8843,19.317404,8041.7539};
+			special="NONE";
+			id=61;
+			side="EMPTY";
+			vehicle="rhs_btr80_msv";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="id = [""BTR"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";vehnbr = [this,[[""Number"", [9,10,11], ""AviaBlue"",233]]] spawn rhs_fnc_decalsInit;";
+		};
+		class Item3
+		{
+			position[]={6794.8452,19.309999,8017.9834};
+			azimut=120;
+			id=62;
+			side="EMPTY";
+			vehicle="rhs_gaz66_ap2_vmf";
+			leader=1;
+			skill=0.60000002;
+			text="d";
+			init="id = [""Medicvan"", this] call compile preprocessFileLineNumbers ""Orbat\APCOrbat.sqf"";";
+		};
+	};
+	class Markers
+	{
+		items=8;
+		class Item0
+		{
+			position[]={6817.0347,19.310862,8028.6606};
+			name="sss";
+			type="Faction_US";
+			a=0;
+			b=0;
+		};
+		class Item1
+		{
+			position[]={7579.4297,24.512297,8362.4736};
+			name="sadda";
+			type="mil_arrow";
+			colorName="ColorWEST";
+			a=4;
+			b=4;
+			angle=59.878799;
+		};
+		class Item2
+		{
+			position[]={8803.667,22.184767,7714.1226};
+			name="sadds";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=25;
+			b=2500;
+			angle=-105.786;
+		};
+		class Item3
+		{
+			position[]={7342.0132,12.15725,9467.5645};
+			name="sadds_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=25;
+			b=2000;
+			angle=-127.228;
+		};
+		class Item4
+		{
+			position[]={7967.5825,26.4,8459.0273};
+			name="FEBA";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=25;
+			b=2000;
+			angle=-44.690399;
+		};
+		class Item5
+		{
+			position[]={9342.8496,18.072617,7067.7832};
+			name="sd";
+			text="FEBA";
+			type="mil_objective";
+			colorName="ColorBlack";
+		};
+		class Item6
+		{
+			position[]={9103.5605,11.66,8908.3809};
+			name="OBJ";
+			text="OBJ";
+			type="mil_objective";
+		};
+		class Item7
+		{
+			position[]={9936.7383,11.622756,9419.3594};
+			name="FEBA_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=25;
+			b=2000;
+			angle=-44.690399;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"mbg_celle2"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_celle2"
+	};
+	randomSeed=4713945;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"mbg_celle2"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_celle2"
+	};
+	randomSeed=15306236;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"mbg_celle2"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_celle2"
+	};
+	randomSeed=1766272;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
