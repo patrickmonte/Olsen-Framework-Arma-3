@@ -473,7 +473,7 @@ FNC_SpectateCheck = {
 
 //FNC_SpectatePrep() checks and handles if the player should respawn or begin spectating
 FNC_SpectatePrep = {
-	
+	hint"test";
 	private ["_respawnName", "_respawnPoint", "_text", "_loadout"];
 	
 	if (FW_RespawnTickets > 0) then {
