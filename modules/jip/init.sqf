@@ -13,12 +13,13 @@ if (isServer) then {
 	};
 };
 
-if (!isDedicated) then {
+if (!isDedicated && hasInterface &&str side player != "LOGIC") then {
 
 	if (FW_JIPTYPE == "DENY" && missionNamespace getVariable ["FW_JIPDenied", false]) exitWith {
 
 		[] spawn {
 			sleep 5;
+			player call FNC_UntrackUnit;
 			player setDamage 1;
 
 			sleep 8;
