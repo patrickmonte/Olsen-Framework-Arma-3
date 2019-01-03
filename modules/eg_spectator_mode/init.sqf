@@ -143,11 +143,7 @@ if (!isDedicated) then {
 					sleep 0.89+_damage;
 					
 					["<t color='#FF0000'>YOU ARE DEAD</t>", 0, 0.4, 2, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
-					
-					sleep 3;
-					cutText ["\n","BLACK IN", 5];
-					["FW_death", 0, false] call ace_common_fnc_setHearingCapability;
-					0 fadeSound 1;
+
 				} else {
 					("BIS_layerEstShot" call BIS_fnc_rscLayer) cutRsc ["RscStatic", "PLAIN"];
 
@@ -171,6 +167,11 @@ if (!isDedicated) then {
 	};
 
 	FNC_RespawnedRemoteFunc = {
+
+		cutText ["\n","BLACK IN", 5];
+		["FW_death", 0, false] call ace_common_fnc_setHearingCapability;
+		0 fadeSound 1;
+
 		private _respawnName = toLower(format ["fw_%1_respawn", side player]);
 		private _respawnPoint = missionNamespace getVariable [_respawnName, objNull];
 		private _loadout = (player getVariable ["FW_Loadout", ""]);
@@ -221,6 +222,10 @@ if (!isDedicated) then {
 		player hideObjectGlobal true;
 		player setCaptive true;
 		player allowDamage false;
+
+		cutText ["\n","BLACK IN", 5];
+		["FW_death", 0, false] call ace_common_fnc_setHearingCapability;
+		0 fadeSound 1;
 
 		player call FNC_RemoveAllGear;
 		player addWeapon "itemMap";
@@ -395,6 +400,11 @@ if (!isDedicated) then {
 };
 
 if (isServer) then {
+	FW_CurrentWaveCountWest = if (FW_WaveSizeWest > 0) then { 0 } else { -1000 };
+	FW_CurrentWaveCountEast = if (FW_WaveSizeEast > 0) then { 0 } else { -1000 };
+	FW_CurrentWaveCountInd = if (FW_WaveSizeInd > 0) then { 0 } else { -1000 };
+	FW_CurrentWaveCountCiv = if (FW_WaveSizeCiv > 0) then { 0 } else { -1000 };
+
 	FNC_RequestRespawnFromServer = {
 		private _side = _this;
 		private _canRespawn = false;
@@ -402,6 +412,17 @@ if (isServer) then {
 			case west: {
 				if (FW_RespawnTicketsWest > 0) then {
 					FW_RespawnTicketsWest = FW_RespawnTicketsWest - 1;
+
+					FW_CurrentWaveCountWest = FW_CurrentWaveCountWest + 1;
+					if (FW_CurrentWaveCountWest >= FW_WaveSizeWest) then {
+						[] spawn {
+							FW_RespawnPenGateWest hideObjectGlobal true;
+							sleep 30;
+							FW_RespawnPenGateWest hideObjectGlobal false;
+						};
+						FW_CurrentWaveCountWest = 0;
+					};
+
 					publicVariable "FW_RespawnTicketsWest";
 					_canRespawn = true;
 				};
@@ -409,6 +430,17 @@ if (isServer) then {
 			case east: {
 				if (FW_RespawnTicketsEast > 0) then {
 					FW_RespawnTicketsEast = FW_RespawnTicketsEast - 1;
+
+					FW_CurrentWaveCountEast = FW_CurrentWaveCountEast + 1;
+					if (FW_CurrentWaveCountEast >= FW_WaveSizeEast) then {
+						[] spawn {
+							FW_RespawnPenGateEast hideObjectGlobal true;
+							sleep 30;
+							FW_RespawnPenGateEast hideObjectGlobal false;
+						};
+						FW_CurrentWaveCountEast = 0;
+					};
+
 					publicVariable "FW_RespawnTicketsEast";
 					_canRespawn = true;
 				};
@@ -416,6 +448,17 @@ if (isServer) then {
 			case independent: {
 				if (FW_RespawnTicketsInd > 0) then {
 					FW_RespawnTicketsInd = FW_RespawnTicketsInd - 1;
+
+					FW_CurrentWaveCountInd = FW_CurrentWaveCountInd + 1;
+					if (FW_CurrentWaveCountInd >= FW_WaveSizeInd) then {
+						[] spawn {
+							FW_RespawnPenGateInd hideObjectGlobal true;
+							sleep 30;
+							FW_RespawnPenGateInd hideObjectGlobal false;
+						};
+						FW_CurrentWaveCountInd = 0;
+					};
+
 					publicVariable "FW_RespawnTicketsInd";
 					_canRespawn = true;
 				};
@@ -423,6 +466,17 @@ if (isServer) then {
 			case civilian: {
 				if (FW_RespawnTicketsCiv > 0) then {
 					FW_RespawnTicketsCiv = FW_RespawnTicketsCiv - 1;
+
+					FW_CurrentWaveCountCiv = FW_CurrentWaveCountCiv + 1;
+					if (FW_CurrentWaveCountCiv >= FW_WaveSizeCiv) then {
+						[] spawn {
+							FW_RespawnPenGateCiv hideObjectGlobal true;
+							sleep 30;
+							FW_RespawnPenGateCiv hideObjectGlobal false;
+						};
+						FW_CurrentWaveCountCiv = 0;
+					};
+
 					publicVariable "FW_RespawnTicketsCiv";
 					_canRespawn = true;
 				};
